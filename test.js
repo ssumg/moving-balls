@@ -26,7 +26,7 @@ class Ball{
     y = random(height);
   
     }
-  function move(){
+  void move(){
     x = x + xDir;
     y = y + yDir;
     
