@@ -36,7 +36,7 @@ class Ball{
     yDir *= -1;
   }
   
-  function display(){
+  void display(){
     ellipseMode(CENTER); 
     noStroke();
     fill(y*x/2, x/2, x/y);
