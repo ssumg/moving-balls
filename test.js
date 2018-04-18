@@ -1,13 +1,13 @@
 Ball[] ball = new Ball[10];
 
-void setup(){
+function setup(){
   size(600, 400);
   background(0);
   for(int i=0; i<10; i++)
     ball[i] = new Ball();
 }
 
-void draw(){
+function draw(){
 
   background(0);
   for(int i=0; i<10; i++){
@@ -15,7 +15,7 @@ void draw(){
     ball[i].display();
   }
 }
-class Ball{
+public class Ball{
   float x, y;
   float xDir, yDir;
   
@@ -26,7 +26,7 @@ class Ball{
     y = random(height);
   
     }
-  void move(){
+  function move(){
     x = x + xDir;
     y = y + yDir;
     
@@ -36,7 +36,7 @@ class Ball{
     yDir *= -1;
   }
   
-  void display(){
+  function display(){
     ellipseMode(CENTER); 
     noStroke();
     fill(y*x/2, x/2, x/y);
