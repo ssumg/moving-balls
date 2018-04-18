@@ -1,7 +1,7 @@
-public class Ball[] ball = new Ball[10];
+Ball[] ball = new Ball[10];
 
 function setup(){
-  size(600, 400);
+  createCanvas(600, 400);
   background(0);
   for(int i=0; i<10; i++)
     ball[i] = new Ball();
@@ -15,7 +15,7 @@ function draw(){
     ball[i].display();
   }
 }
-Ball{
+class Ball{
   float x, y;
   float xDir, yDir;
   
