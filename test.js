@@ -15,7 +15,7 @@ function draw(){
     ball[i].display();
   }
 }
-public class Ball{
+Ball{
   float x, y;
   float xDir, yDir;
   
