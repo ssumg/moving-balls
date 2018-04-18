@@ -1,4 +1,4 @@
-Ball[] ball = new Ball[10];
+public class Ball[] ball = new Ball[10];
 
 function setup(){
   size(600, 400);
